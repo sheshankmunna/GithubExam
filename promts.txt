@@ -28,4 +28,4 @@ node:internal/modules/package_json_reader:256
   throw new ERR_MODULE_NOT_FOUND(packageName, fileURLToPath(base), null;
 18. yes
 19. yes
-20. document all the promts as of now im used and store in promts.txt
+

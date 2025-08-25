@@ -1,0 +1,89 @@
+// Prompt 1: Create a static method ApiResponse.success(data, message = "Request successful", pagination = null)
+// → Returns { success: true, data, message, timestamp, requestId, pagination }.
+
+
+// Prompt 2: Create ApiResponse.error(errorCode, message = "Something went wrong", details = null)
+// → Returns { success: false, errorCode, message, details, timestamp, requestId }.
+
+
+// Prompt 3: Ensure ApiResponse handles single objects, arrays (with optional pagination), and primitive values.
+// → Add unit tests/examples for each type.
+
+
+// Prompt 4: Auto-populate timestamp in ApiResponse and allow optional requestId.
+// → Show middleware example that attaches requestId to request/response.
+
+
+// Prompt 5: Ensure all controllers use ApiResponse.* so response shape is consistent.
+// → Structure: { success, data, errorCode, message, timestamp, requestId, pagination }.
+
+
+// Prompt 6: Build full-stack app skeleton with React frontend + Express backend.
+// → Include login, payment screen, and API test endpoint.
+
+
+// Prompt 7: Create a PaymentScreen React component (Flipkart-like UI).
+// → Include saved cards, add new card, UPI, coupons, order summary, and Pay button.
+
+
+// Prompt 8: Create Login screen (React) with validation.
+// → Backend POST /api/auth/login with test credential (test@local / Pass123!).
+
+
+// Prompt 9: Audit the app for missing features and fix them.
+// → Start with payment, test integration, confirm changes.
+
+
+// Prompt 10: Provide UI navigation steps for testers.
+// → Step-by-step clicks and expected results for login, payments, profile.
+
+
+// Prompt 11: Rebuild payment section if functionality is broken.
+// → Ensure end-to-end flow works.
+
+
+// Prompt 12: Ensure login is functional with validation and test API endpoint.
+// → Use ApiResponse for all outputs.
+
+
+// Prompt 13: Add "Proceed to Pay" button on main page.
+// → Navigates to /payment with pre-filled order summary.
+
+
+// Prompt 14: Provide run instructions.
+// → Start backend (node server.js), frontend (npm run dev), and run integration test.
+
+
+// Prompt 15: Update payment if issues exist.
+// → Confirm all changes via tests.
+
+
+// Prompt 16: Confirm and finalize implemented changes.
+// → Checklist verification.
+
+
+// Prompt 17: Run node server.js to start backend.
+// → Validate endpoints return ApiResponse format.
+
+
+// Prompt 18: Confirm post-run changes.
+// → Ensure nothing breaks after deployment.
+
+
+// Prompt 19: Confirm final updates.
+// → Stability check.
+
+
+// Prompt 20: Create React component <DefectAnalysisReport>.
+// → Analyze bug data, display charts (Recharts), summary, overdue items, recommendations, export to PDF.
+
+
+// Prompt 21: Generate Architecture Design Gap Analysis report.
+// → Include scalability, security, technical debt, modernization strategies, prioritized roadmap.
+
+
+// Prompt 22: Refactor all prompts for clarity and grammar.
+// → Save them in promptsfinal.txt with version header and changelog.
+
+
+// Prompt 23: Consolidate all prompts into promptsfinal.txt.

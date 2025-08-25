@@ -1,0 +1,30 @@
+
+1. Add a static method `ApiResponse.success(data, message = "Request successful", pagination = null)` that returns an ApiResponse with `success=true`, populated data, and relevant metadata.
+2. Add a static method `ApiResponse.error(errorCode, message = "Something went wrong")` that returns an ApiResponse with `success=false`, sets the errorCode, and includes metadata like timestamp and requestId.
+3. Ensure `ApiResponse` can handle various data types: single objects, arrays, or primitive values. For arrays, support pagination metadata. Test with examples: single user object, list of users, boolean flag.
+4. In the ApiResponse builder, automatically populate the timestamp with the current time and allow setting the requestId (to be passed from middleware or controller).
+5. Ensure all responses follow a consistent JSON structure:
+{
+  success,
+  data,
+  errorCode,
+  message,
+  timestamp,
+  requestId,
+  pagination
+}
+6. Build a fully functional app using the provided services, ensuring the UI is complete and interactive.
+7. Create a payment section similar to popular payment screens (e.g., Flipkart), using the same design and fields, and make it functional.
+8. Ensure login works with proper validation for correct credentials. Create a test login and provide an API endpoint.
+9. Review the entire application for functional completeness.
+10. Provide UI navigation steps to verify each developed feature.
+11. If functionality is not working, rebuild the payment section as described above and ensure it is functional.
+12. Ensure login works as described above, with validation and a test login API endpoint.
+13. Add the payment button navigation to the main page as needed.
+14. Run the server and perform integration testing.
+15. Update as required.
+16. Confirm changes.
+17. Run `node server.js` to start the backend server.
+18. Confirm changes.
+19. Confirm changes.
+

@@ -14,6 +14,16 @@ class ApiResponse {
     }
   }
 
+  /**
+   * Pagination metadata structure:
+   * {
+   *   items: Array, // paginated items
+   *   page: Number, // current page
+   *   size: Number, // page size
+   *   totalElements: Number, // total items
+   *   totalPages: Number // total pages
+   * }
+   */
   toJSON() {
     return {
       success: this.success,

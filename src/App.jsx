@@ -1,8 +1,6 @@
 
-import React, { useState } from 'react';
-import LoginScreen from './LoginScreen';
-import PaymentScreen from './PaymentScreen';
-import './App.css';
+
+import ClaimsScreen from './ClaimsScreen';
 
 function App() {
   const [activeTab, setActiveTab] = useState('login');
@@ -22,10 +20,20 @@ function App() {
         >
           Payment
         </button>
+        <button
+          className={`nav-link${activeTab === 'claims' ? ' active' : ''}`}
+          onClick={() => setActiveTab('claims')}
+        >
+          Claims
+        </button>
       </nav>
       <div className="container-fluid">
         {activeTab === 'login' && <LoginScreen />}
         {activeTab === 'payment' && <PaymentScreen />}
+        {activeTab === 'claims' && <ClaimsScreen />}
+  // Example usage of DefectAnalysisReport in App.jsx
+  import DefectAnalysisReport from "./DefectAnalysisReport";
+  return <DefectAnalysisReport />;
       </div>
     </div>
   );

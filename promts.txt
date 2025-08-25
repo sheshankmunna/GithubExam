@@ -1,0 +1,31 @@
+1. add a static method ApiResponse.success(data, message = "Request successful", pagination = null) that returns a built ApiResponse with success=true, data populated, and metadata included.
+2. add a static method ApiResponse.error(errorCode, message = "Something went wrong") that returns a built ApiResponse with success=false, errorCode set, and proper metadata like timestamp and requestId.
+3. ensure ApiResponse can handle different data types: single objects, arrays, or primitive values. for arrays, allow pagination metadata. test with examples: single user object, list of users, boolean flag.
+4. in ApiResponse builder, automatically populate timestamp with current time and allow setting requestId (to be passed in from middleware or controller).
+5. make sure all responses have a consistent JSON structure:
+{
+  success,
+  data,
+  errorCode,
+  message,
+  timestamp,
+  requestId,
+  pagination
+}
+6. creata a fully functional app by using the services given make it full ui functional
+7. creata a payemnty section similar to many payment screens in like flipkart use the same design and fileds and make it functional
+8. login also need to work exactly validate correct logins create a one tst login and give and apu end
+9. now i need to check my entire functional application
+10. give me ui navigation steps to check each of the developed functionality
+11. non of the functionality is working creata a payemnty section similar to many payment screens in like flipkart use the same design and fileds and make it functional
+12. login also need to work exactly validate correct logins create a one tst login and give and apu end
+13. yes i need and this payment button navigation also need to add in the main page
+14. yes run rthe server and do the integration
+15. yes update
+16. yes
+17. node server.js
+node:internal/modules/package_json_reader:256
+  throw new ERR_MODULE_NOT_FOUND(packageName, fileURLToPath(base), null;
+18. yes
+19. yes
+20. document all the promts as of now im used and store in promts.txt
